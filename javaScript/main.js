@@ -1,10 +1,16 @@
-
-// var typed = new Typed(".abut_des", {
-//     strings: ["UI UX Designer", "JS Devoloper","MD Jamil Kashem Porosh","Web App Devoloper", "Full Stack Web Devoloper"],
+// var typed = new Typed(".type", {
+//     strings: ['I Love Coding so Much'],
 //     typeSpeed: 120,
 //     loop:true,
 //     backSpeed: 120
 // });
+window.addEventListener('scroll',() =>{
+    const nav = document.querySelector('.wth_out_wlcm');
+    const scroll_value = window.scrollY;
+    if(scroll_value>90){
+        nav.style.backgroundColor = "#fff";
+    }    
+});
 const bars = document.querySelector(".bars");
 bars.addEventListener("click", () => {
     const navigation = document.querySelector("nav");
