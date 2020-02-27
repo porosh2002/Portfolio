@@ -62,10 +62,11 @@ li a:hover {
 
 .wclm_c_to_act {
     text-align: center;
+    padding:0px 30px;
 }
 
 .wlcm {
-    padding: 160px 30px 60px 30px;
+    padding: 160px 0px 60px 0px;
     color: #2b3a42;
     font-weight: bold;
     letter-spacing: 1px;
