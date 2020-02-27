@@ -1,298 +1,140 @@
 * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-    font-family: 'Monda'
+    font-family: "Monda";
+    overflow: hidden;
 }
 
-.first_section {
-    height: 400px;
-    background: #2b3a42;
-}
-
-.navigation {
+.nav_sec {
     display: flex;
     justify-content: space-between;
+    padding: 0px 70px;
     height: 60px;
-    position: fixed;
-    width: 100%;
-    background: #344249;
-    z-index:1;
 }
 
-.logo_and_bars {
-    margin: auto 20px
-}
-
-.navigation_logo {
-    font-size: 25px;
-    letter-spacing: 2px;
-    font-family: sans-serif;
-    cursor: context-menu;
-    color: #fff
-}
-
-.navigation_links {
-    width: 600px;
-    margin: auto 35px auto 0
-}
-
-.navigation_unordered_list {
+.lgo_brs {
     display: flex;
-    justify-content: space-between
+    height: 100%;
 }
 
-.navigation_unordered_list li {
-    list-style-type: none
+.nav_sec p {
+    color: #2b3a42;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: default;
+    margin: auto 0px;
 }
 
-.nav_links {
-    color: #fff;
+nav {
+    width: 350px;
+    margin: auto 0px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    color: #2b3a42;
     font-size: 14px;
     text-decoration: none;
     letter-spacing: 1px;
     padding-bottom: 5px;
-    border: 1px solid transparent
 }
 
-.nav_links:hover {
-    color: #d2d2d2;
-    border-bottom: 1px solid #fff;
-    transition: .5s
+li a:hover {
+    border-bottom: 2px solid #2b3a42;
 }
 
-.under_nav_text_and_act {
-    padding-top: 160px;
-    color: #fff;
-    text-align: center;
-    letter-spacing: 1px
-}
-
-.type {
-    margin-left: 10px;
-    font-size: 16px
-}
-
-.undr_nav_txt_p {
-    font-size: 22px;
-    padding-bottom: 50px
-}
-
-.undr_nav_btn {
-    font-size: 16px;
-    padding: 10px 10px;
-    border: 1.5px solid #fff;
-    border-radius: 3px;
-    color: #fff;
-    text-decoration: none;
-    font-family: sans-serif
-}
-
-.undr_nav_btn:hover {
-    background-color: #fff;
-    color: #2b3a42
-}
-
-@media screen and (max-width:1040px) {
-    .navigation {
-        display: block
-    }
-
-    .logo_and_bars {
-        height: 100%;
-        display: flex;
-        justify-content: space-between
-    }
-
-    .all_bars,
-    .navigation_logo {
-        margin: auto 0;
-        cursor: pointer
-    }
-
-    .signle_bars {
+@media screen and (max-width: 650px) {
+    .brs {
         height: 3px;
         width: 25px;
         margin: 5px;
-        background-color: #fff
-    }
-
-    .navigation_links {
-        width: 100%;
-        padding: 50px 0;
         background-color: #2b3a42;
-        transition: .5s;
-        transform: translateX(1070px);
-        border-bottom-left-radius: 15%
     }
 
-    .on_click_navigation {
-        transform: translateX(0);
-        transition: .5s
-    }
-
-    .navigation_unordered_list {
+    .all_brs {
         display: block;
-        text-align: center
+        margin: auto 0px;
+        cursor: pointer;
     }
 
-    .navigation_unordered_list li {
-        padding: 10px
+    .lgo_brs {
+        justify-content: space-between;
+        padding: 0px 20px;
     }
 
-    .nav_links {
-        font-size: 18px
+    .nav_sec {
+        display: block;
+        padding: 0px;
     }
 
-    .nav_links:hover {
-        color: #d2d2d2;
+    nav {
+        background-color: #2b3a42;
+        width: 100%;
+        padding: 60px 0px;
+        transform:translateX(15000px);
+    }
+
+    nav ul {
+        text-align: center;
+        display: block;
+    }
+
+    li {
+        padding: 12px;
+    }
+
+    li a {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    li a:hover {
         border: none;
-        transition: .5s
     }
 }
-
-.secound_section {
-    background-color: #fff;
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 0px;
+.wlcm{
+    padding:150px 0px 150px 0px;
 }
-
-.ss_pic_s,
-.ss_skill {
-    display: block;
-    margin: auto 0px;
-    width: 300px;
-    text-align: center;
-}
-
-.about_sec_img {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    z-index:0;
-}
-
-.ss_img_tle {
-    font-size: 20px;
-    letter-spacing: 2px;
-    margin: 20px 0px 10px 0px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #203a429a;
-    color: #203a42;
-}
-
-.ss_img_des {
-    font-size: 16px;
-    color: #203a42;
-}
-
-.skill_ttle {
-    text-align: center;
-    margin: 30px 0px;
-    letter-spacing: 1px;
-}
-
-.ss_skill p {
-    margin: 5px;
-    text-align: left;
-}
-
-/* per centages */
-.hc_skill,
-.js_skill,
-.rct_skill,
-.bstp_skill,
-.wp_skill,
-.njs_skill,
-.mdb_skill,
-.ws_skill {
-    height: 3px;
-    background-color: #203a42;
-}
-
-/* responsive */
-@media screen and (max-width:750px) {
-    .secound_section {
-        display: block;
-        padding: 50px 20px;
-    }
-
-    .ss_pic_s,
-    .ss_skill {
-        display: block;
-        margin: 0px auto;
-    }
-
-    .skill_ttle {
-
-        margin: 70px 0px 30px 0px;
-
-    }
-}
-.pjts
+.wlcm p 
 {
-    background-color:#2b3a42;
-    padding:80px 20px;
-    display:flex;
-    justify-content:space-between;
+    font-size:30px;
+    padding-left:70px;
+    letter-spacing:2px;
+    background-image: linear-gradient(135deg,#02aab0,#00cdac);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight:bold;
 }
-.pjt a{
-    padding:5px 10px;
-    border:1.5px solid #fff;
-    color:#fff;
-    text-decoration: none;
+.about_sec
+{
+    padding:70px 0px;
 }
-.pjt a:hover{
-    background-color: #fff;
+.int_me 
+{
     color:#2b3a42;
+    text-align:center;
+    font-weight:600;
+    letter-spacing:2px;
+    font-size:25px;
 }
-/*  */
-.pjt
+.abut_des
 {
-    width:300px;
-    text-align: center;
-}
-.pjt_t
-{
-    font-size:20px;
-    color:#fff;
-    letter-spacing:1px;
-    font-weight: bold;
-    padding:15px 0px;
-}
-.pjt_des
-{
-    font: size 14px;
-    color:#d2d2d2;
-    padding:15px 0px 50px 0px;
-}
-/* responsive */
-@media screen and (max-width:950px)
-{
-    .pjts
-    {
-        display: block;
-        padding:80px 50px;
-    }
-    .pjt
-    {
-        width:100%;
-        margin:0px auto;
-    }
-    .pjt_t
-{
-    padding:5px 0px;
-}
-.pjt_des
-{
-    padding:5px 0px 20px 0px;
-}
-.scndpjt
-{
-    margin:80px 0px;
-}
+    font-size:16px;
+    color:#444;
+    text-align:center;
+    padding-top:10px;
+    letter-spacing:2px;
+    padding-bottom:100px;
 }
