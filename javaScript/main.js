@@ -5,8 +5,12 @@
 //     loop:true,
 //     backSpeed: 120
 // });
-const all_barr = document.querySelector(".all_bars"),
-    navigation = document.querySelector(".navigation_links");
-all_barr.addEventListener("click", () => {
-    navigation.classList.toggle("on_click_navigation")
+const bars = document.querySelector(".bars");
+bars.addEventListener("click", () => {
+    const navigation = document.querySelector("nav");
+    const first_bar = document.querySelector(".barfst");
+    const mdl_bar = document.querySelector(".bar_mdl");
+    navigation.classList.toggle("on_click_navigation");
+    first_bar.classList.toggle('fstbr');
+    mdl_bar.classList.toggle('mdlbr');
 });
