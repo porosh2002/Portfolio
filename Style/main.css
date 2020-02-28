@@ -99,7 +99,7 @@ li a:hover {
   nav {
     width: 100%;
     background-color: #2b3a42;
-    padding-left: 50px;
+    text-align:center;
     transform: translateX(2000px);
     transition: 0.5s;
   }
@@ -158,6 +158,5 @@ li a:hover {
 .abut_des
 {
   width:280px;
-  margin:0px auto;
 }
 }
