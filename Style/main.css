@@ -131,7 +131,7 @@ li a:hover {
 /* about section */
 .about_sec
 {
-  background-image: linear-gradient(180deg,#02aab0,#00cdac);
+  background-color:#00cdac;
     color:#2b3a42;
     text-align:center;
     padding:100px 80px;
@@ -210,3 +210,14 @@ li a:hover {
   margin:50px auto;
 }
 }
+/* contact section */
+.cntct_sec
+{
+  height:500px;
+  background:url('/image/PP.jpg');
+  box-sizing:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+
