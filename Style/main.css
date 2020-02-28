@@ -119,13 +119,15 @@ li a:hover {
   }
   .on_click_navigation {
     transform: translateX(0px);
-    transition: 0.7s;
+    transition: 0.5s;
   }
   .fstbr {
     width: 20px;
+    transition:.5s;
   }
   .mdlbr {
     width: 15px;
+    transition:.5s;
   }
 }
 /* about section */
@@ -244,6 +246,7 @@ text-align:center;
   color: #2b3a42;
   display:block;
   margin: 0px auto;
+  border-radius:10px;
 }
 .btn
 {
@@ -262,5 +265,26 @@ text-align:center;
 .btn:hover
 {
   background-color: #444;
+}
+/* responsive */
+@media screen and (max-width:950px){
+  .name_email
+{
+display: block;
+margin: 0px auto;
+text-align: center;
+}
+.inpt_txt,
+.inpt_email
+{
+width:250px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.txtarea
+{
+width:80%;
 
+}
 }
