@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Monda";
@@ -130,7 +131,7 @@ li a:hover {
 /* about section */
 .about_sec
 {
-  background-image: linear-gradient(185deg,#02aab0,#00cdac);
+  background-image: linear-gradient(180deg,#02aab0,#00cdac);
     color:#2b3a42;
     text-align:center;
     padding:100px 80px;
@@ -158,5 +159,54 @@ li a:hover {
 .abut_des
 {
   width:280px;
+}
+}
+/* projects section */
+.pjt_sec
+{
+  display:flex;
+  justify-content:space-between;
+  padding:100px 20px;
+  text-align: center;
+}
+.pjt
+{
+  width:300px;
+  color: #2b3a42;
+}
+.pjt_ttle
+{
+  font-size:25px;
+  padding-bottom:20px;
+}
+.pjt_des
+{
+  font-size:16px;
+  padding-bottom:20px;
+}
+.live_dmo
+{
+  padding:7px 10px;
+  background-color: #2b3a42;
+  color:#fff;
+  text-decoration: none;
+}
+.live_dmo:hover
+{
+  color: #d2d2d2;
+}
+/* responsive */
+
+@media screen and (max-width:1000px)
+{
+  .pjt_sec
+{
+  padding:30px 20px;
+  display:block;
+}
+.pjt
+{
+  width:70%;
+  margin:50px auto;
 }
 }
