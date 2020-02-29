@@ -21,3 +21,6 @@ bars.addEventListener("click", () => {
     first_bar.classList.toggle('fstbr');
     mdl_bar.classList.toggle('mdlbr');
 });
+const crnt_yr =  new Date().getFullYear();
+const current_Year = document.querySelector('.current_Year').innerHTML =crnt_yr;
+

@@ -328,4 +328,11 @@ font-size:16px;
   margin-bottom:70px;
 }
 }
-/* section title */
+/* footer */
+footer p 
+{
+  text-align: center;
+  color: #d2d2d2;
+  background-color: #2b3a42;
+  padding:5px 0px;
+}
