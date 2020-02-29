@@ -244,7 +244,7 @@ li a:hover {
 .cntct_sec
 {
   background-color: #00cdac;
-  padding:100px 50px;
+  padding:70px 50px;
 }
 .name_email
 {
@@ -293,6 +293,14 @@ text-align:center;
 {
   background-color: #444;
 }
+.cntc_sec_ttle
+{
+  font-size:35px;
+  color: #2b3a42;
+  letter-spacing:1px;
+  text-align:center;
+  margin-bottom:100px;
+}
 /* responsive */
 @media screen and (max-width:950px){
   .name_email
@@ -304,14 +312,20 @@ text-align: center;
 .inpt_txt,
 .inpt_email
 {
-width:250px;
+width:280px;
 display: block;
 margin-left: auto;
 margin-right: auto;
+font-size:16px;
 }
 .txtarea
 {
 width:80%;
+font-size:16px;
+}
+.cntc_sec_ttle
+{
+  margin-bottom:70px;
 }
 }
 /* section title */
