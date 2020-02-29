@@ -66,13 +66,14 @@ li a:hover {
 }
 .ctoact {
   padding: 10px;
-  background-color: #fd6a57;
+  background-color: #ef8172;
   color: #ffff;
   text-decoration: none;
   border-radius: 5px;
 }
 .ctoact:hover {
-  background-color: #ef8172;
+  background-color:#2b3a42;
+  transition:.5s;
 }
 /* responsive first section */
 @media screen and (max-width: 750px) {
@@ -152,6 +153,12 @@ li a:hover {
     padding-bottom:20px;
     border-radius:100%;
 }
+.about_name_mine
+{
+  font-size:30px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
 /* responsive about section */
 @media screen and (max-width:750px){
     .about_sec
@@ -168,8 +175,11 @@ li a:hover {
 {
   display:flex;
   justify-content:space-between;
-  padding:100px 20px;
+  margin-top:100px;
   text-align: center;
+}
+#projects{
+  padding:80px 0px;
 }
 .pjt
 {
@@ -178,13 +188,20 @@ li a:hover {
 }
 .pjt_ttle
 {
-  font-size:25px;
-  padding-bottom:20px;
+  font-size:23px;
+  margin-bottom:20px;
 }
 .pjt_des
 {
   font-size:16px;
-  padding-bottom:20px;
+  margin-bottom:20px;
+}
+.pjt_ttle_mn
+{
+  text-align: center;
+  font-size:35px;
+  color: #2b3a42;
+
 }
 .live_dmo
 {
@@ -199,18 +216,28 @@ li a:hover {
   color: #d2d2d2;
 }
 /* responsive */
-
 @media screen and (max-width:1000px)
 {
   .pjt_sec
 {
-  padding:30px 20px;
   display:block;
+  margin-top:70px;
 }
 .pjt
 {
-  width:70%;
+  width:65%;
   margin:50px auto;
+}
+#projects{
+  padding:50px 0px;
+}
+.pjt_des
+{
+  margin-bottom:15px;
+}
+.pjt_ttle
+{
+  margin-bottom:10px;
 }
 }
 /* contact section */
@@ -285,6 +312,6 @@ margin-right: auto;
 .txtarea
 {
 width:80%;
-
 }
 }
+/* section title */
