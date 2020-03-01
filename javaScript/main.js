@@ -23,4 +23,15 @@ bars.addEventListener("click", () => {
 });
 const crnt_yr =  new Date().getFullYear();
 const current_Year = document.querySelector('.current_Year').innerHTML =crnt_yr;
+// image 
+const image_own = document.querySelector('.own_img');
+image_own.addEventListener('mouseenter',()=>{
+    image_own.style.transform = "rotate(360deg)";
+    image_own.style.transition = " linear 3s";
+    image_own.style.zIndex = "0";
+    setTimeout(()=>{
+    image_own.src = "/image/own_img_CF.png";
+    },3500);
+});
+
 
