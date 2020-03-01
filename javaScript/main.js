@@ -30,7 +30,7 @@ image_own.addEventListener('mouseenter',()=>{
     image_own.style.transition = " linear 3s";
     image_own.style.zIndex = "0";
     setTimeout(()=>{
-    image_own.src = "/image/own_img_CF.png";
+    image_own.src = "image/own_img_CF.png";
     },3500);
 });
 
