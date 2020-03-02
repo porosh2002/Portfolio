@@ -242,10 +242,13 @@ li a:hover {
 }
 }
 /* contact section */
-.cntct_sec
+.cntc_Sec_card
 {
   background-color: #00cdac;
-  padding:70px 50px;
+}
+.cntct_sec
+{
+  padding:70px 20px 0px 20px;
 }
 .name_email
 {
@@ -257,7 +260,6 @@ li a:hover {
 {
 height:25px;
 width:350px;
-margin-top:70px;
 margin-bottom:70px;
 background-color:transparent;
 border:none;
@@ -301,7 +303,7 @@ text-align:center;
   color: #2b3a42;
   letter-spacing:1px;
   text-align:center;
-  margin-bottom:40px;
+  margin-bottom:70px;
 }
 /* responsive */
 @media screen and (max-width:950px){
@@ -327,7 +329,7 @@ font-size:16px;
 }
 .cntc_sec_ttle
 {
-  margin-bottom:70px;
+
 }
 }
 /* footer */
@@ -339,3 +341,116 @@ footer p
   padding:5px 0px;
 }
 /* card section */
+.cntc_Sec_card
+{
+  padding:70px 0px;
+}
+.main_card
+{
+    display:flex;
+    justify-content: space-between;
+    font-family: 'Monda', sans-serif;
+}
+.fa-home,
+.fa-phone-alt,
+.fa-envelope,
+.fa-users
+{
+font-size:40px;
+background: #a8ff78;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color:transparent;
+-webkit-background-clip: text;
+background-clip: text;
+padding:30px 0px 0px 0px;
+}
+.card_1
+{
+    height:200px;
+    width:300px;
+    background-color: #444;
+    margin:20px;
+    border-radius:10px;
+    text-align: center;
+    transition:.5s;
+}
+.card_1:hover
+{
+transition: .5s;
+transform: scale(1.05);
+}
+.card_des
+{
+    letter-spacing:1.5px;
+    font-size:14px;
+    color:#e2dfdf;
+    padding-top:10px;
+}
+.card_title
+{
+    letter-spacing:1px;
+    font-size:22px;
+    color:#fff;
+    padding-top:15px;
+}
+.social_links
+{
+    padding-top:15px;
+}
+.fa-twitter:hover
+{
+    color:#1c9deb;
+}
+.fa-github:hover
+{
+    color:#000;
+}
+.fa-twitter,
+.fa-github
+{
+    color:#fff;
+    font-size:20px;
+}
+.fa-twitter
+{
+    margin-right:30px;
+}
+.first_two_card,
+.last_two_card
+{
+    width:50%;
+    display: flex;
+    justify-content: space-around;
+}
+/* responsive */
+@media screen and (max-width:1040px)
+{
+    .main_card
+    {
+        display:block;
+    }
+    .first_two_card,
+    .last_two_card
+    {
+        width:100%;
+    }
+}
+@media screen and (max-width:630px)
+{
+    .main_card
+    {
+        display:block;
+    }
+    .first_two_card,
+    .last_two_card
+    {
+        display: block;
+    }
+    .card_1
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+}
