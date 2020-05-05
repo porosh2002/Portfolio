@@ -18,7 +18,10 @@ body {
     justify-content: space-between;
     width: 100%;
     position: fixed;
-    z-index: 1
+    z-index: 1;
+    box-shadow: 0px 2px 14px 0px rgba(82,74,74,0.75);
+-webkit-box-shadow: 0px 2px 14px 0px rgba(82,74,74,0.75);
+-moz-box-shadow: 0px 2px 14px 0px rgba(82,74,74,0.75);
 }
 
 .logo {
@@ -161,7 +164,7 @@ li a:hover {
 }
 
 .about_sec {
-    background-color: #00cdac;
+    background: linear-gradient(to right,#2193b0 , #6dd5ed);
     color: #2b3a42;
     text-align: center;
     padding: 100px 80px
@@ -268,7 +271,7 @@ li a:hover {
 }
 
 .cntc_Sec_card {
-    background-color: #00cdac
+    background: linear-gradient(to right,#2193b0 , #6dd5ed);
 }
 
 .cntct_sec {
