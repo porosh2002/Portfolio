@@ -1,14 +1,13 @@
 var typed = new Typed(".type", {
   strings: [
-    "I Love Coding so Much",
     "Welcome To My Website",
-    "I'm Porosh",
-    "I'm a JS Developer",
-    "I'm a Full Stack Web-Devoloper",
+    "I'm a Full Stack Web-Developer",
+    "I'm a JavaScript Developer",
+    "I am the Person you are Looking for",
   ],
   typeSpeed: 120,
   loop: !0,
-  backSpeed: 120,
+  backSpeed: 10,
   shuffle: !0,
 });
 window.addEventListener("scroll", () => {
@@ -34,4 +33,12 @@ image_own.addEventListener("mouseenter", () => {
     setTimeout(() => {
       image_own.src = "image/own_img_CF.png";
     }, 3500);
+});
+$('.navLinks').click(function(){
+  const e = document.querySelector("nav")
+  e.classList.remove('on_click_navigation')
+  t = document.querySelector(".barfst");
+  o = document.querySelector(".bar_mdl");
+  t.classList.remove("fstbr");
+  o.classList.remove("mdlbr");
 });
