@@ -13,6 +13,12 @@ var typed = new Typed(".type", {
 window.addEventListener("scroll", () => {
   const e = document.querySelector(".wth_out_wlcm");
   window.scrollY > 90 && (e.style.backgroundColor = "#fff");
+  if(window.scrollY > 90){
+    e.classList.add('nav_shadow')
+  }
+  if(window.scrollY < 90){
+    e.classList.remove('nav_shadow')
+  }
 });
 const bars = document.querySelector(".bars");
 bars.addEventListener("click", () => {
